@@ -25,14 +25,46 @@
       padding: 20px;
       background: rgba(0,0,0,0.4);
       border-radius: 8px;
-      text-align: center; /* center text inside container */
+      text-align: center;
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      .container {
+        font-size: 2rem;
+      }
+    }
+    .iban {
+      margin-bottom: 20px;
+    }
+    .instagram-link img {
+      height: 40px;
+      width: 40px;
+      vertical-align: middle;
+      filter: brightness(100%) invert(100%);
+      transition: filter 0.3s ease;
+      cursor: pointer;
+    }
+    .instagram-link img:hover {
+      filter: brightness(75%) invert(75%);
+    }
+    .instagram-text {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <p>Saaja: Sven Streich</p>
-    <p>IBAN: DE81100110012626101084</p>
+    <p class="iban">Saaja: Sven Streich</p>
+    <p class="iban">IBAN: DE81100110012626101084</p>
+    
+    <div class="instagram-section">
+      <div class="instagram-text">Saame sõbraks</div>
+      <a class="instagram-link" href="https://www.instagram.com/strikesven/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo" />
+      </a>
+    </div>
   </div>
 </body>
 </html>
