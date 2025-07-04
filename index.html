@@ -27,11 +27,15 @@
       border-radius: 8px;
       text-align: center;
       font-size: 1rem;
+      overflow-x: auto; /* allow horizontal scroll if needed */
     }
     .iban {
       font-size: 3rem;
       line-height: 1.2;
       margin-bottom: 20px;
+      white-space: nowrap;        /* prevent line breaks */
+      overflow-wrap: normal;
+      word-break: keep-all;
     }
     .instagram-section {
       margin-top: 40px; /* extra space above Instagram section */
